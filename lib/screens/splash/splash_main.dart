@@ -15,14 +15,13 @@ class SplashScreenState extends State<SplashScreenMain> {
     super.initState();
     Future.delayed(Duration(seconds: 3), () {
       if (mounted) {
-        print("Navigating to: ${AppRoutes.welcomeScreen}");
-        Navigator.pushReplacementNamed(context, AppRoutes.welcomeScreen);
+        Navigator.pushReplacementNamed(context, AppRoutes.stakeholderSelection);
       }
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: LogoSplashAthlete()));
+    return Scaffold(body: Center(child: LogoMain()));
   }
 }
