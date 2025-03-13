@@ -8,6 +8,8 @@ class AppRoutes{
   static const String athleteSplashScreen = '/athleteSplashScreen';
   static const String coachSplashScreen = '/coachSplashScreen';
   static const String ageConfirmation = '/ageConfirmation';
+  static const String athleteLogin = '/athleteLogin';
+  
 
 
   static Map<String, WidgetBuilder> routes = {
@@ -17,5 +19,6 @@ class AppRoutes{
     athleteSplashScreen: (context) => SplashAthleteMain(),
     coachSplashScreen: (context) => NotAvailable(),
     ageConfirmation: (context) => AgeConfirmation(),
+    athleteLogin: (context) => AthleteLogin(),
   };
 }
